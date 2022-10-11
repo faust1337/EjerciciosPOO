@@ -10,6 +10,5 @@ public class Ej4 {
         System.out.println("Superficie: " + svc.superficie(rec));
         System.out.println("Perimetro: " + svc.perimetro(rec));
         svc.dibujarRectangulo(rec);
-        //Dibuja bien si base<altura, pero no al revés.
     }    
 }

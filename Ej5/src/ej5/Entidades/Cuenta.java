@@ -20,31 +20,24 @@ public class Cuenta {
     public String getTitular() {
         return titular;
     }
-
     public void setTitular(String titular) {
         this.titular = titular;
     }
-
     public int getNroCuenta() {
         return nroCuenta;
     }
-
     public void setNroCuenta(int nroCuenta) {
         this.nroCuenta = nroCuenta;
     }
-
     public long getDni() {
         return dni;
     }
-
     public void setDni(long dni) {
         this.dni = dni;
     }
-
     public double getSaldo() {
         return saldo;
     }
-
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }

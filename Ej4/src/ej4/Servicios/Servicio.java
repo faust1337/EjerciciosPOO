@@ -19,13 +19,9 @@ public class Servicio {
         return (rec.getAltura()+rec.getBase())*2;
     }
     public void dibujarRectangulo(Rectangulo rec){
-        int base, altura;
-        if(rec.getBase()>=rec.getAltura()){ base = rec.getBase(); altura = rec.getAltura(); 
-        }else{ base = rec.getAltura();  altura = rec.getBase(); }
-        System.out.println("Base: " + base + "\nAltura: " + altura);
-        for (int i = 0; i < base; i++) {
-            for (int j = 0; j < altura; j++) {
-                if(i!=0 && i!=base-1 && j!=0 && j!=altura-1){
+        for (int i = 0; i < rec.getAltura(); i++) {
+            for (int j = 0; j < rec.getBase(); j++) {
+                if(i!=0 && i!=rec.getAltura()-1 && j!=0 && j!=rec.getBase()-1){
                     System.out.print("  ");
                 }else {System.out.print("* ");}
             }
