@@ -13,10 +13,9 @@ public class ej11 {
         Date fechaIngresada = new Date(anio,mes,dia);
         System.out.println("Fecha actual: " + fechaActual.toString());
         System.out.println("Fecha ingresada: " + fechaIngresada.toString());
-        int difAnios = fechaActual.getYear() - fechaIngresada.getYear();
+        int difAnios = Math.abs(fechaActual.getYear() - fechaIngresada.getYear());
         if(difAnios == 0){
             System.out.println("Son el mismo año.");
         }else System.out.println("Hay " + difAnios + " años diferencia.");
     }
-    
 }
